@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;
+   }
+  
+input[type=text],input[type=password] {
+  width: 160%;
+  padding: 12px;
+  border: 1.5px solid red;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+<!--textbox ki blue outline ko change karne ke lie ye code likha hae-->
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+   outline: none;
+  
+}
+.message {
+	color: #FF0000;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+}
+input[type=text]:hover
+{
+   border: 2.5px solid red;
+}
+
+
+input[type=submit] {
+  background-color: #ed1010;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #f22e24;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 20px;
+  max-width: 700px;
+  padding-left: 140px;
+  }
+  input[type=text]:hover,input[type=password]:hover
+{
+   border: 2.5px solid red;
+}
+ label
+  {
+
+  	font-weight: bold;
+  	font:10px;
+  }
+    .box2
+{
+	top: 10%;
+	left:90%;
+	float: right;
+	background:#ED0707;
+	width: 100px;
+	height:650px;
+	padding: 0px;
+}
+.box
+{
+    margin-top: 0px;
+	left:0%;
+	float: left;
+	background:#ED0707;
+	width: 100px;
+	height:650px;
+	padding-top: 0px;
+}
+h3
+{
+	font-size: 30px;
+	font-weight: bold;
+	font-family: "Georgia";s
+}
+img
+{
+	margin-left: 430px;
+}
+h3
+{
+    margin-left:420px;
+    
+}
+form
+{
+    
+    
+    margin-left:350px;
+}
+input[type=submit]
+{
+    margin-left:100px;
+}
+</style>
+<head>
+	<title>LOGIN</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<img src="images\login.png" height="200" width="200">
+
+	<div class="box"></div>
+	<div class="box2"></div> 
+		<div class="container">
+        <h3>LOG IN</h3>
+	<form action="login.php" method="POST"  onsubmit="return checkForm(this);">
+	
+    <label for="uname">UserName<span style="color:#ED0707; font-size: 30px; font-weight: bold;" >*</span></label>
+     <input type="text" id="uname" name="username" placeholder="Enter username" required>
+
+  <label for="pwd1">Password<span style="color:#ED0707; font-size: 30px; font-weight: bold;" >*</span></label>
+    <input type="password" id="pwd1" name="password" placeholder="Enter your password" required>
+    <br><br><br>
+<br />
+    <input type="submit" value="LOG IN" name="login">
+</form>
+</div>
+
+</body>
+</html>

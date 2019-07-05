@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<title> bootstrap starter</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+</head>
+<body>	
+	<div class="searchbox">
+		<input class=" searchtext" type="text" name="" placeholder="Type to search">
+		<a class="searchbutton" href=" #">
+		<i class="fas fa-search"></i>
+		</a>
+	</div>
+	<div class="head">
+		<h1>BLOOD BANK MANAGMENT SYSTEM</h1>
+			</div>
+
+			
+		<div class="nav">
+		<ul class="mainmenu">
+			<li><a href="#">HOME</a></li>
+			<li><a href="aboutus.html">ABOUT US</a></li>
+			<li><a href="#">ADD NEW</a>
+			<ul class="submenu">
+					<li><a href="addbloodgroup.html">blood group</a></li>
+					<li><a href="createbloodstock.html">blood stock</a></li>
+					<li><a href="createbloodsells.html">blood sells</a></li>
+					<li><a href="createdonor.html"> blood doners</a></li>
+				</ul>	
+			<li><a href="#">reports</a>
+				<ul class="submenu">
+					<li><a href="">blood group</a></li>
+					<li><a href="">blood stock</a></li>
+					<li><a href="">blood sells</a></li>
+					<li><a href="#"> blood doners</a></li>
+				</ul>
+			<li><a href="#">contact us</a></li>
+			<li><a href="#">register</a>
+				<ul class="submenu">
+					<li><a href="registeration1.html">CREATE NEW ACCOUNT</a></li>
+					<li><a href="login.html">LOG IN</a></li>
+					<li><a href="#">CHANGE PASSWORD</a></li>
+				</ul>
+			<li><a href="#">log out</a></li>
+
+		</ul>
+	</div>	
+	<div class="box"></div>
+	<div class="box2"></div>
+	  <div id="bubblecontent">
+	 <img src="http://cdn.24.co.za/files/Cms/General/d/4581/366f5efffd50492898c56487b9b0a2a6.jpg" width="935" height="435" style="margin-left: 140px; margin-top: 20px;">
+    
+</div>	
+
+
+
+  <div id="bubbles">
+    <div onclick="bubbles(0); clearInterval(intrvl);" style="background:#ED0707;"></div>
+    <div onclick="bubbles(1); clearInterval(intrvl);"></div>
+    <div onclick="bubbles(2); clearInterval(intrvl);"></div>
+    <div onclick="bubbles(3); clearInterval(intrvl);"></div>
+  </div>
+  <br><br><br><br> <br>  <br><br><br>
+  <div class="footer-top"></div>
+  <section id="footer">
+  <div class=" footer-main-div">
+	<div class="footer-social-icons">
+	<ul>
+		<li><a href="#" target="blank"><i class="fab fa-facebook"></i></a></li>
+		<li><a href="#" target="blank"><i class="fab fa-twitter"></i></a></li>
+		<li><a href="#" target="blank"><i class="fab fa-google-plus-g"></i></a></li>
+		<li><a href="#" target="blank"><i class="fab fa-youtube"></i></a></li>
+	</ul>
+</div>
+<div class="footer-menu-one">
+	<ul>
+		<li><a href="#">HOME</a></li>
+		<li><a href="#">CONTACT US</a></li>
+		<li><a href="#">REPORTS</a></li>
+		<li><a href="#">ABOUT US</a></li>
+		<li><a href="#">ADD NEW</a></li>
+	</ul>
+</div>
+<div class="footer-menu-two">
+	<ul>
+		<li><a href="#">BLOGS</a></li>
+		<li><a href="#">NEWS</a></li>
+		<li><a href="#">GALLERY</a></li>
+		<li><a href="#">MEDIA</a></li>
+	</ul>
+</div>
+</div>
+<div class="footer-bottom">
+	<p>Design by:<a href="#">M & M</a></p>
+</div>
+</section>
+</body>
+</html>
+<script>
+// This simple function returns object reference for elements by ID
+function _(x){return document.getElementById(x);}
+// Variables for bubble array, bubble index, and the setInterval() variable
+var ba, bi=0, intrvl;
+// bca - Bubble Content Array. Put your content here.
+var bca = [
+    '<img src="http://cdn.24.co.za/files/Cms/General/d/4581/366f5efffd50492898c56487b9b0a2a6.jpg"  width="935" height="435" style="margin-left: 140px; margin-top:20px";>',
+     '<img src="https://dekhnews.com/wp-content/uploads/2015/06/World-Blood-Donor-Day-Quotes-Slogans-Sayings-Images-Whatsapp-FB-DP-2015.jpg"width="935" height="435">',
+      '<img src="http://motivirus.com/wp-content/uploads/2019/02/Motivational-Blood-donation-quotes-and-slogans.jpg"width="935" height="435" style="margin-left: 140px; margin-top:20px;" >',
+       '<img src="https://storage.googleapis.com/ehimages/2018/1/13/img_9fd325b8264a46e9688a15b5b70e7800_1515858722331_original.jpg"width="935" height="435">',
+	
+];
+
+
+// This function is triggered by the bubbleSlide() function below
+function bubbles(bi){
+	// Fade-out the content
+	_("bubblecontent").style.opacity = 0;
+	// Loop over the bubbles and change all of their background color
+	for(var i=0; i < ba.length; i++){
+		ba[i].style.background = "rgba(0,0,0,.1)";
+	}
+	// Change the target bubble background to be darker than the rest
+	ba[bi].style.background = "#ED0707";
+	// Stall the bubble and content changing for just 300ms
+	setTimeout(function(){
+		// Change the content
+		_("bubblecontent").innerHTML = bca[bi];
+		// Fade-in the content
+		_("bubblecontent").style.opacity = 1;
+	}, 300);
+}
+// This function is set to run every 5 seconds(5000ms)
+function bubbleSlide(){
+	bi++; // Increment the bubble index number
+	// If bubble index number is equal to the amount of total bubbles
+	if(bi == ba.length){
+		bi = 0; // Reset the bubble index to 0 so it loops back at the beginning
+	}
+	// Make the bubbles() function above run
+	bubbles(bi);
+}
+// Start the application up when document is ready
+window.addEventListener("load", function(){
+	// Get the bubbles array
+	ba = _("bubbles").children;
+	// Set the interval timing for the slideshow speed
+	intrvl = setInterval(bubbleSlide, 5000);
+});
+</script>
+
+
+

@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registeration</title>
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+body {font-family: Arial, Helvetica, sans-serif;}
+
+* {box-sizing: border-box;}
+
+input[type=text],input[type=password],input[type=email] ,input[type=phone],select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1.5px solid red;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+<!--textbox ki blue outline ko change karne ke lie ye code likha hae-->
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+   outline: none;
+  
+}
+
+
+input[type=submit] {
+  background-color: #ed1010;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover{
+  background-color: #f22e24;
+}
+
+.container {
+
+
+	margin-top: 0px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 20px;
+  max-width: 800px;
+
+  padding-left: 140px;
+  }
+  label
+  {
+
+  
+  	font:10px;
+  }
+.box
+{
+	top: 10%;
+	left:30%;
+	float: left;
+	background:#ba0000;
+	width: 60px;
+	height:1200px;
+	padding: 0px;
+}
+.box2
+{
+	top: 10%;
+	left:90%;
+	float: right;
+	background:#ba0000;
+	width: 60px;
+	height:1200px;
+	padding: 0px;
+
+
+}
+h3
+{
+	font-size: 30px;
+	font-family: "Georgia";
+}
+img
+{
+	position: absolute;
+	float: right;
+	margin-left: 750px;
+	margin-top: 200px;
+}
+.img3
+{
+	
+	margin-left: 750px;
+	margin-top: 900px;	
+    padding-bottom: 20px;
+	
+}
+.img2
+{
+	position: absolute;
+	float: right;
+	margin-left: 750px;
+	margin-top: 200px;	
+}
+
+label
+{
+    font-weight:bold;
+}
+#l1
+{
+  font-weight:normal;
+}
+input[type=text]:hover,input[type=email]:hover,input[type=password]:hover,input[type=phone]:hover,textarea:hover
+{
+   border: 2.5px solid red;
+}
+
+.nav
+{
+	background:#ba0000;
+	padding: 10px,0px;
+	text-align: center;
+	list-style: none; 
+} 
+
+
+.mainmenu >li
+{
+	display: inline-block;
+	padding: 10px,0px;
+	margin-left: 10px;
+	margin-top: 15px;
+	border-left: 2px solid white;
+	border-left-width: 2px;
+	width:140px;
+	height: 40px;
+	text-align: center;
+	letter-spacing: 2px;
+	font-family: "Georgia";
+	font-size: 16px;
+	color: black;
+	text-transform: uppercase;
+	transition: 4s;
+	font-weight: 800px;
+	line-height: 30px;
+	
+	}
+.submenu
+{
+	display: none;
+	width: 300px;
+	list-style-type: none;
+	position: absolute;
+	border: 5px solid white;
+	margin-top: 30px;
+	margin-left: -10px;
+	text-align: left;
+	box-shadow: 1px,1px,1px #ED0707;
+
+}
+.submenu >li
+{
+	padding: 10px;
+	color:white;
+	background:  #ba0000;
+	font-size: 15px;
+	text-align: left; 
+	box-shadow: 1px,1px,1px #ED0707;
+
+
+}
+.submenu:before
+{
+	content: '';
+	width: 0px;
+	height: 0px;
+	border-left: 20px solid transparent;
+	border-right:  20px solid transparent;
+	border-bottom:  30px solid white;
+	position: absolute;
+	margin: -30px 0px 0px 60px;
+
+
+}
+.head
+{
+	background: white;
+	color:#ED0707;
+	padding: 10px 60px;
+	font-size: 120%;
+	border-top: 15px solid #FE0202 ;
+	font-family: "  Arial";
+	font-weight: 2000px;
+	letter-spacing: 2px;
+}
+.mainmenu li:hover,.submenu li:hover
+{
+	background:#db0909;
+
+
+}
+.mainmenu li:hover .submenu
+{
+	display: block;
+}
+.mainmenu >li >a
+{
+	text-decoration: none;
+	color:white;
+}
+.submenu >li >a
+{
+	text-decoration: none;
+	color: white;
+}
+.box
+{
+	top: 10%;
+	left:30%;
+	float: left;
+	background:#ba0000;
+	width: 60px;
+	height:1200px;
+	padding: 0px;
+}
+#bubbles{
+
+width:auto; 
+margin:0px auto;
+padding-left: 1050px;
+top: 200px;
+ }
+#bubbles > div{
+ display:inline-block;
+  width:15px;
+ height:13px;
+  margin:20px 20px 0px 20px; 
+     margin-top: 4px;
+	background:rgba(0,0,0,.1);
+	 text-align:center;
+	  border:2px solid #999;
+ border-radius:100%; 
+ font-size:17px; 
+text-decoration:none; 
+transition: background 0.3s linear 0s;
+ cursor:pointer;
+
+	}
+#bubblecontent{ margin:0px ; 
+	transition:opacity 0.3s linear 0s; 
+	font-family: Arial;
+}
+	*
+	{
+		margin: 0px;
+		padding: 0px;
+		box-sizing: border-box;
+	}
+.footer-main-div
+{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	background: #272727;
+	padding: 20px 0px;
+}
+.footer-social-icons
+{
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+.footer-social-icons ul
+{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+.footer-social-icons ul li
+{
+	display: inline-block;
+	width:50px;
+	height: 50px;
+	margin: 0 10px;
+	border-radius: 100%;
+	background: #ED0707;
+
+}
+.footer-social-icons ul li:hover
+{
+	background: red;
+}
+.footer-social-icons ul li a
+{
+	color: #fff;
+}
+.footer-social-icons ul li:hover a
+{
+color: #fff;
+}
+.footer-social-icons ul li a
+{
+	color: #fff;
+	font-size: 25px;
+}
+.footer-social-icons ul li a i
+{
+	line-height: 50px;
+
+}
+.footer-menu-one
+{
+	width: 100%;
+	height: auto;
+	margin:auto;
+	margin-top: 25px;
+
+}
+.footer-menu-one ul
+{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+
+}
+.footer-menu-one ul li
+{
+display: inline-block;
+margin: 0px 20px;
+}
+.footer-menu-one ul li a
+{
+font-family: arial;
+font-size: 16px;
+font-weight: 600;
+color: #fff;
+padding-top: 5px;
+}
+.footer-menu-two
+{
+	width: 100%;
+	height: auto;
+	margin:auto;
+	margin-top: 15px;
+
+}
+.footer-menu-two ul
+{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+
+}
+.footer-menu-two ul li
+{
+display: inline-block;
+margin: 0px 20px;
+}
+.footer-menu-two ul li a
+{
+font-family: arial;
+font-size: 16px;
+font-weight: 600;
+color: #fff;
+padding-top: 5px;
+text-decoration:none;
+}
+.footer-bottom
+{
+	width: 100%;
+	height: auto;
+	margin:auto;
+	background: #D50101;
+	padding: 5px;	
+}
+.footer-top
+{
+	width: 100%;
+	height: 20px;
+	margin:auto;
+	background: #D50101;
+	padding: 5px;
+	
+}
+.footer-bottom p
+{
+	font-family: "Georgia";
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+	font-weight: 600px;
+	letter-spacing: 1px;
+}
+.footer-bottom p a
+{
+	color: #fff;
+	text-decoration:none;
+
+}
+footer-bottom p a:hover
+{
+	color: #272727;
+
+}
+a
+{
+    
+   text-decoration:none; 
+
+}
+.footer-menu-two ul li a:hover
+{
+	color: #272727;
+}
+.footer-menu-one ul li a:hover
+{
+	color: #D50101;
+}
+.footer-menu-one ul li a
+{
+text-decoration: none;
+}
+
+
+
+
+</style>
+
+</head>
+<body>
+
+	
+		<div class="nav">
+		<ul class="mainmenu">
+			<li><a href="#">HOME</a></li>
+			<li><a href="aboutus.html">ABOUT US</a></li>
+			<li><a href="#">ADD NEW</a>
+			<ul class="submenu">
+					<li><a href="addbloodgroup.html">blood group</a></li>
+					<li><a href="createbloodstock.html">blood stock</a></li>
+					<li><a href="createbloodsells.html">blood sells</a></li>
+					<li><a href="createdonor.html"> blood doners</a></li>
+				</ul>	
+			<li><a href="#">reports</a>
+				<ul class="submenu">
+					<li><a href="bloodstockreport.php">blood stock</a></li>
+					<li><a href="bloodsells.php">blood sells</a></li>
+					<li><a href="donorreport.php">blood donors</a></li>
+				</ul>
+			<li><a href="contact us edited.html">contact us</a></li>
+			<li><a href="#">register</a>
+				<ul class="submenu">
+					<li><a href="registeration1.html">CREATE NEW ACCOUNT</a></li>
+					<li><a href="login.html">LOG IN</a></li>
+					<li><a href="#">CHANGE PASSWORD</a></li>
+				</ul>
+			<li><a href="#">log out</a></li>
+
+		</ul>
+	</div>	
+	<div class="box"></div>
+	<div class="box2"></div>
+	<img src="https://diamedicalusa.com/wp-content/uploads/2015/08/Simulated-Blood-A-Positive.jpg" width="300px" height="300px">
+	 <img  id="img3"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLOzSK6u8RvWEKWPyGpqDe-I3Tg3XXKmg8mnxd9FeW0shKIT71">
+	<img  id="img2"src="http://garkihospital.com/wp-content/uploads/2017/06/Donate-Blood2.jpg"width="300px" height="300px">
+	
+	<div class="container">
+
+		
+ <form  action="registeration1.php" method="POST" onsubmit="return checkForm(this);">
+
+  	<h3>CREATE USER ACCOUNT</h3>
+
+    <label for="uname">UserName<span style="color:#ED0707; font-size: 30px; font-weight: bold;" >*</span></label>
+    <input type="text" id="uname" name="username" placeholder="Enter username" required>
+    <label id="l1">username cannot be null.It must contain letters,numbers and underscore.</label>
+
+    <div> <label for="email">Email<span style="color:#ED0707; font-size: 30px; font-weight: bold;" >*</span></label></div>
+    <input type="email" id="email" name="email" placeholder="your email address" required>
+
+  <label for="pwd1">Password<span style="color:#ED0707; font-size: 30px; font-weight: bold;" >*</span></label>
+    <input type="password" id="pwd1" name="password" placeholder="enter your password" required>
+    <label id="l1">password must contain atleast 6 characters including atleast one number,uppercase and lowercase alphabets.</label>
+
+    <div><label for="pwd2">Confirm Password<span style="color:#ED0707; font-size: 30px; font-weight: bold;" >*</span></label></div>
+     <input type="password" id="pwd2" name="password" placeholder="Reenter your password" required>
+
+
+
+   <label for="fullname">Name<span style="color:#ED0707; font-size: 30px; font-weight: bold;" >*</span></label>
+ <input type="text" id="fullname" name="fullname" placeholder="Enter your fullname">
+  <label id="Label1">Only letters are allowed for this field.</label>
+ <div><label for="numb">Contact Number<span style="color:#ED0707; font-size: 30px; font-weight: bold;" >*</span></label></div>
+  <input type="text"  id="numb"name="contactnumber" placeholder="Your contact number"  pattern="[0-9]{11}"required>
+  <label id="l1">must contain only numbers.Enter 11 characters maximium without underscore.</label>
+  <div><label for="address">Address<span style="color:#ED0707; font-size: 30px; font-weight: bold;" >*</span></label></div>
+    <textarea id="address" name="Address" placeholder="Type your address here" style="height:100px" required></textarea>
+
+  <label for="country">Country<span style="color:#ED0707; font-size: 30px; font-weight: bold;" >*</span></label>
+ <input type="text" id="country" name="country" placeholder="Enter your country name" required>
+
+  <label for="city">City<span style="color:#ED0707; font-size: 30px; font-weight: bold;" >*</span></label>
+ <input type="text" id="City" name="city" placeholder="Enter your Cityname" required>
+<br><br><br>
+
+
+    <input type="submit" value="CREATE NEW ACCOUNT" name="save">
+  
+
+</div>
+  <div class="footer-top"></div>
+  <section id="footer">
+  <div class=" footer-main-div">
+	<div class="footer-social-icons">
+	<ul>
+		<li><a href="#" target="blank"><i class="fab fa-facebook"></i></a></li>
+		<li><a href="#" target="blank"><i class="fab fa-twitter"></i></a></li>
+		<li><a href="#" target="blank"><i class="fab fa-google-plus-g"></i></a></li>
+		<li><a href="#" target="blank"><i class="fab fa-youtube"></i></a></li>
+	</ul>
+</div>
+<div class="footer-menu-one">
+	<ul>
+		<li><a href="#">HOME</a></li>
+		<li><a href="#">CONTACT US</a></li>
+		<li><a href="#">REPORTS</a></li>
+		<li><a href="#">ABOUT US</a></li>
+		<li><a href="#">ADD NEW</a></li>
+	</ul>
+</div>
+<div class="footer-menu-two">
+	<ul>
+		<li><a href="#">BLOGS</a></li>
+		<li><a href="#">NEWS</a></li>
+		<li><a href="#">GALLERY</a></li>
+		<li><a href="#">MEDIA</a></li>
+	</ul>
+</div>
+</div>
+<div class="footer-bottom">
+	<p>Design by:<a href="#">M & M</a></p>
+</div>
+</section>
+
+	<script type="text/javascript">
+
+  function checkForm(form)
+  {
+
+    if(form.username.value == "") {
+      alert("Error: Username cannot be blank!");
+      form.username.focus();
+      return false;
+    }
+    re = /^\w+$/;
+    if(!re.test(form.username.value)) {
+      alert("Error: Username must contain only letters, numbers and underscores!");
+      form.username.focus();
+      return false;
+    }
+   
+
+
+    if(form.pwd1.value != "" && form.pwd1.value == form.pwd2.value) {
+      if(form.pwd1.value.length < 6) {
+        alert("Error: Password must contain at least six characters!");
+        form.pwd1.focus();
+        return false;
+      }
+      if(form.pwd1.value == form.username.value) {
+        alert("Error: Password must be different from Username!");
+        form.pwd1.focus();
+        return false;
+      }
+      re = /[0-9]/;
+      if(!re.test(form.pwd1.value)) {
+        alert("Error: password must contain at least one number (0-9)!");
+        form.pwd1.focus();
+        return false;
+      }
+      re = /[a-z]/;
+      if(!re.test(form.pwd1.value)) {
+        alert("Error: password must contain at least one lowercase letter (a-z)!");
+        form.pwd1.focus();
+        return false;
+      }
+      re = /[A-Z]/;
+      if(!re.test(form.pwd1.value)) {
+        alert("Error: password must contain at least one uppercase letter (A-Z)!");
+        form.pwd1.focus();
+        return false;
+      }
+    } else {
+      alert("Error: Please check that you've entered and confirmed your password!");
+      form.pwd1.focus();
+      return false;
+    }
+
+    alert("You entered a valid password: " + form.pwd1.value);
+    return true;
+  }
+
+</script>
+
+
+</body>
+</html>

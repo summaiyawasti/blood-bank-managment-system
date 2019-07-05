@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text],input[type=password] ,textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1.5px solid red;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+<!--textbox ki blue outline ko change karne ke lie ye code likha hae-->
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+   outline: none;
+  
+}
+input[type=text]:hover
+{
+   border: 2.5px solid red;
+}
+textarea:hover
+{
+     border: 2.5px solid red;
+}
+
+input[type=submit] {
+  background-color: #ed1010;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #f22e24;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 20px;
+  max-width: 700px;
+  padding-left: 140px;
+  }
+  input[type=text]:hover,input[type=password]:hover
+{
+   border: 2.5px solid red;
+}
+ label
+  {
+
+    font-weight: bold;
+    font:10px;
+  }
+    .box2
+{
+  top:10%;
+  left:90%;
+  float: right;
+  background:#ED0707;
+  width: 100px;
+  height:600px;
+  padding: 0px;
+}
+.box
+{
+    margin-top: 0px;
+  left:0%;
+  float: left;
+  background:#ED0707;
+  width: 100px;
+  height:600px;
+  padding-top: 0px;
+}
+h3
+{
+  font-size: 30px;
+  font-weight: bold;
+}
+img
+{
+  margin-left: 20px;
+}
+
+.nav
+{
+	background: #ED0707;
+	padding: 10px,0px;
+	text-align: center;
+	list-style: none; 
+} 
+
+
+.mainmenu >li
+{
+	display: inline-block;
+	padding: 10px,0px;
+	margin-left: 10px;
+	margin-top: 15px;
+	border-left: 2px solid white;
+	border-left-width: 2px;
+	width:140px;
+	height: 40px;
+	text-align: center;
+	letter-spacing: 2px;
+	font-family: "Georgia";
+	font-size: 16px;
+	color: black;
+	text-transform: uppercase;
+	transition: 4s;
+	font-weight: 800px;
+	line-height: 30px;
+	
+	}
+.submenu
+{
+	display: none;
+	width: 300px;
+	list-style-type: none;
+	position: absolute;
+	border: 5px solid white;
+	margin-top: 30px;
+	margin-left: -10px;
+	text-align: left;
+	box-shadow: 1px,1px,1px #ED0707;
+
+}
+.submenu >li
+{
+	padding: 10px;
+	color:white;
+	background:  #FE0202;
+	font-size: 15px;
+	text-align: left; 
+	box-shadow: 1px,1px,1px #ED0707;
+
+
+}
+.submenu:before
+{
+	content: '';
+	width: 0px;
+	height: 0px;
+	border-left: 20px solid transparent;
+	border-right:  20px solid transparent;
+	border-bottom:  30px solid white;
+	position: absolute;
+	margin: -30px 0px 0px 60px;
+
+
+}
+.head
+{
+	background: white;
+	color:#ED0707;
+	padding: 10px 60px;
+	font-size: 120%;
+	border-top: 15px solid #FE0202 ;
+	font-family: "Georgia";
+	font-weight: 2000px;
+	letter-spacing: 2px;
+}
+.mainmenu li:hover,.submenu li:hover
+{
+	background: #B70303;
+
+
+}
+.mainmenu li:hover .submenu
+{
+	display: block;
+}
+.mainmenu >li >a
+{
+	text-decoration: none;
+	color:white;
+}
+.submenu >li >a
+{
+	text-decoration: none;
+	color: white;
+}
+</style>
+<head>
+  <title>Add New</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="nav">
+		<ul class="mainmenu">
+			<li><a href="#">HOME</a></li>
+			<li><a href="aboutus.html">ABOUT US</a></li>
+			<li><a href="#">ADD NEW</a>
+			<ul class="submenu">
+					<li><a href="addbloodgroup.html">blood group</a></li>
+					<li><a href="createbloodstock.html">blood stock</a></li>
+					<li><a href="createbloodsells.html">blood sells</a></li>
+					<li><a href="createdonor.html"> blood doners</a></li>
+				</ul>	
+			<li><a href="#">reports</a>
+				<ul class="submenu">
+					<li><a href="bloodstockreport.php">blood stock</a></li>
+					<li><a href="bloodsells.php">blood sells</a></li>
+					<li><a href="donoreport.php">blood donors</a></li>
+				</ul>
+			<li><a href="contact us edited.html">contact us</a></li>
+			<li><a href="#">register</a>
+				<ul class="submenu">
+					<li><a href="registeration1.html">CREATE NEW ACCOUNT</a></li>
+					<li><a href="login.html">LOG IN</a></li>
+					<li><a href="#">CHANGE PASSWORD</a></li>
+				</ul>
+			<li><a href="#">log out</a></li>
+
+		</ul>
+	</div>	
+
+
+  <div class="box"></div>
+  <div class="box2"></div> 
+    <div class="container">
+  <form ... onsubmit="return checkForm(this);">
+  <h3>Add New</h3>
+    <label for="uname">Name<span style="color:#ED0707; font-size: 30px; font-weight: bold;" >*</span></label>
+     <input type="text" id="uname" name="username" placeholder="Enter username" required>
+    <br><br>
+     <label for="Message">Description<span style="color:#ED0707; font-size: 30px; font-weight: bold;" >*</span></label>
+     <br>
+  <textarea id="Message" name="Message" placeholder="Type Description" style="height:200px" required></textarea>
+     <br><br><br><br>
+
+    <input type="submit" value="Save">
+</form>
+</div>
+
+</body>
+</html>
